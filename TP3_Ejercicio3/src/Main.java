@@ -22,8 +22,7 @@ public class Main {
 			nroPatente = rand.nextInt(10000000);
 			valorModelo = rand.nextInt(300000000);
 
-//			System.out.println("\nEl numero de patente es " + nroPatente
-//					+ ", y el valor del modelo del año correspondiente es $" + valorModelo);
+			
 			System.out.println(String.format("\nEl numero de patente es %s, y el valor del modelo del año correspondiente es $%s", nroPatente, valorModelo));
 			
 			
