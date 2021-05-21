@@ -44,7 +44,5 @@ public class Main {
 		System.out.println("\nEl valor total de patentes recaudado por el Registro del Automotor es de $" + total);
 		System.out.println("La cantidad de autos cuyo numero de patente es superior a 1300000 es " + numSuperior
 				+ ", lo que representa un %" + ((numSuperior * 100) / cantPatentes) + " del total");
-
-//		System.out.println("El porcentaje de patentes cuyo numero es superior a 1300000 es de %" + (numSuperior * 100) / total);
 	}
 }
