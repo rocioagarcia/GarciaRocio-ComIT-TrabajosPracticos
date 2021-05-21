@@ -22,9 +22,11 @@ public class Main {
 			nroPatente = rand.nextInt(10000000);
 			valorModelo = rand.nextInt(300000000);
 
-			System.out.println("\nEl numero de patente es " + nroPatente
-					+ ", y el valor del modelo del año correspondiente es $" + valorModelo);
-
+//			System.out.println("\nEl numero de patente es " + nroPatente
+//					+ ", y el valor del modelo del año correspondiente es $" + valorModelo);
+			System.out.println(String.format("\nEl numero de patente es %s, y el valor del modelo del año correspondiente es $%s", nroPatente, valorModelo));
+			
+			
 			if (nroPatente <= 1000000) {
 				valorPatente = (valorModelo * 5) / 100;
 			}
@@ -37,11 +39,11 @@ public class Main {
 			if (nroPatente >= 1300000) {
 				numSuperior += 1;
 			}
-			System.out.println("El valor de patente a abonar es: $" + valorPatente);
+			System.out.println(String.format("El valor de patente a abonar es: $%s", valorPatente));
 			total += valorPatente;
 		}
-
-		System.out.println("\nEl valor total de patentes recaudado por el Registro del Automotor es de $" + total);
+		
+		System.out.println(String.format("\nEl valor total de patentes recaudado por el Registro del Automotor es de $%s", total));
 		System.out.println("La cantidad de autos cuyo numero de patente es superior a 1300000 es " + numSuperior
 				+ ", lo que representa un %" + ((numSuperior * 100) / cantPatentes) + " del total");
 	}
