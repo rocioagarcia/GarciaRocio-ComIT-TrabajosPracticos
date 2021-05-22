@@ -3,7 +3,6 @@ import java.util.Random;
 public class Main {
 
 public static void main(String[] args) {
-		
 		final int CANT_ALUMNOS = 70;
 
 		String[] alumnos = new String[CANT_ALUMNOS];
