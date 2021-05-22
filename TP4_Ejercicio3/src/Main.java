@@ -17,19 +17,19 @@ public class Main {
 		
 		switch (opcion) {
 		case 1: 
-			System.out.println("El área del circulo es " + areaCirculo());
+			System.out.println("El área del circulo es " + areaCirculo(scan));
 			break;
 		case 2:
-			System.out.println("El área del cuadrado es " + areaCuadrado());
+			System.out.println("El área del cuadrado es " + areaCuadrado(scan));
 			break;
 		case 3:
-			System.out.println("El área del rectangulo es " + areaRectangulo());
+			System.out.println("El área del rectangulo es " + areaRectangulo(scan));
 			break;
 		case 4:
-			System.out.println("El área del triangulo es " + areaTriangulo());
+			System.out.println("El área del triangulo es " + areaTriangulo(scan));
 			break;
 		case 5:
-			System.out.println("El área del trapecio es " + areaTrapecio() );
+			System.out.println("El área del trapecio es " + areaTrapecio(scan) );
 			break;
 		default: 
 			System.out.println("La opcion ingresada no es correcta");
@@ -37,8 +37,7 @@ public class Main {
 		}
 	}
 
-	private static double areaCirculo() {
-		Scanner scan = new Scanner(System.in);
+	private static double areaCirculo(Scanner scan) {
 		double radio;
 		double area;
 		final double PI = Math.PI;
@@ -51,8 +50,7 @@ public class Main {
 		return area;
 	}
 	
-	private static double areaCuadrado() {
-		Scanner scan = new Scanner(System.in);
+	private static double areaCuadrado(Scanner scan) {
 		double lado;
 		double area;
 		
@@ -64,8 +62,7 @@ public class Main {
 		return area;
 	}
 	
-	private static double areaRectangulo() {
-		Scanner scan = new Scanner(System.in);
+	private static double areaRectangulo(Scanner scan) {
 		double altura;
 		double base;
 		double area;
@@ -81,16 +78,15 @@ public class Main {
 		return area;
 	}
 	
-	private static double areaTriangulo() {
+	private static double areaTriangulo(Scanner scan) {
 		double area;
 		
-		area = areaRectangulo() / 2;
+		area = areaRectangulo(scan) / 2;
 		
 		return area;
 	}
 	
-	private static double areaTrapecio() {
-		Scanner scan = new Scanner(System.in);
+	private static double areaTrapecio(Scanner scan) {
 		double altura;
 		double baseSuperior;
 		double baseInferior;
