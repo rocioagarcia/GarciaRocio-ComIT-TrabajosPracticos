@@ -8,7 +8,7 @@ public static void main(String[] args) {
 		String[] alumnos = new String[CANT_ALUMNOS];
 		int[] notas = new int[CANT_ALUMNOS];
 		
-		datosAcademicos (alumnos, notas);
+		datosExamenFinal (alumnos, notas);
 		
 		int promedio = promedioNotas (notas);
 		System.out.println(String.format("El promedio de las notas de los alumnos es %s", promedio));
@@ -17,7 +17,7 @@ public static void main(String[] args) {
 		
 	}
 	
-	private static void datosAcademicos (String[] alumnos, int[] notas) {
+	private static void datosExamenFinal (String[] alumnos, int[] notas) {
 		Random rand = new Random();
 		
 		int i;
